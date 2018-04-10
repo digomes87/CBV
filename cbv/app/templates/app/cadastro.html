@@ -1,0 +1,14 @@
+{% extends "app/base.html" %}
+{% block content %}
+<h2>{{ titulo }}</h2>
+<form method="POST">
+	{% csrf_token %}
+  <div class="form-group">
+    <small class="form-text text-muted">Insira um Novo Registro</small>
+  </div>
+  <div class="form-check">
+    {{ form.as_p }}
+  </div>
+  <button type="submit" class="btn btn-primary">Adicionar</button>
+</form>
+{% endblock %}

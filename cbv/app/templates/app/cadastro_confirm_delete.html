@@ -1,0 +1,18 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<h2>Certeza Absoluta que Queres Deletar isso ?!?@</h2>
+</br>
+
+<h2>!!!!!!!!!!!!!{{ objeto.nome }}!!!!!!!!!!!!!!!!!</h2>
+</br>
+</br>
+
+{{objeto.id}}
+<form method="POST" action="">
+	{% csrf_token %}
+	 {{ form.as_p }}
+<input type="submit" value="DELETE" />
+</form>
+
+{% endblock %}

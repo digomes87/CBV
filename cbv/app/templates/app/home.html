@@ -1,0 +1,12 @@
+{% extends "app/base.html" %}
+{% block content %}
+<h1 class="mt-5">Seja Bem Vindo</h1>
+    <p class="lead">Projeto feito em Django - Fazendo Uso da CBV: Class Based View</p>
+      <code>Don't repeat yourself</code> By
+      <code>Andy Hunt e Dave Thomas </code>.
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+         <h1 class="display-4">{{Cadastro}}</h1>
+         <p class="">Não se Cadastrou ainda ? <a class="nav-link" href="{% url 'cadastro'%}">Clica Aqui</a></p>
+        
+      </div>
+{% endblock%}
